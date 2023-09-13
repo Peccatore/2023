@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 @import url('https://fonts.googleapis.com/css?family=Allura');
 @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
@@ -26,6 +25,7 @@ body {
     height: 4rem;
     display: inline-block;
 
+    z-index: 1;
 }
 
 .logo_year{
@@ -48,18 +48,49 @@ body {
     bottom: 10px;
     transform: rotate(-3deg);
     border-radius: 50% 50%;
-    z-index: -1;
-    animation: increaseWidth 0.4s linear forwards; /* アニメーションを適用 */
+    z-index: -2;
+
 }
 
-@keyframes increaseWidth {
+
+/* 線の描画 */
+
+.logo_name::before {
+    background-color: #fdfdfd;
+    border: none;
+    content: '';
+    width: 13rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    
+    overflow: hidden;
+
+    animation: logo_name 1s cubic-bezier(.4, 0, .2, 1) forwards;
+    animation: logo_name_left 1s cubic-bezier(0.22, 0, 0.1, 1) forwards;
+    
+}
+
+@keyframes logo_name{
     0% {
-        width: 0rem; /* 初期の幅 */
+        transform: translateX(0%); /* 初期位置、左端から開始 */
     }
     100% {
-        width: 13rem; /* 最終的な幅（必要に応じて変更） */
+        transform: translateX(100%); /* 100%位置、右端に移動 */
     }
-}   
+}
+
+@keyframes logo_name_left{
+    0% {
+        width: 100%; /* 初期幅、全幅から開始 */
+    }
+    100% {
+        width: 0; /* 幅を0に変更 */
+    }
+}
+
+
 
 .box_logo{
     position: relative;
