@@ -68,7 +68,7 @@ body {
     overflow: hidden;
 
     animation: logo_name 1s cubic-bezier(.4, 0, .2, 1) forwards;
-    animation: logo_name_left 1s cubic-bezier(0.22, 0, 0.1, 1) forwards;
+    animation: logo_name_left 1s cubic-bezier(0.7, 0, 1, 0) forwards;
     
 }
 
