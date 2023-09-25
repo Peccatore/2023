@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Allura');
 @import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
 
+/* h1,h2のリセットcss */
+
+h1 , h2{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Ubuntu Mono',"ヒラギノ丸ゴ ProN" ,monospace ;
     background-color: #fdfdfd;
@@ -57,6 +65,7 @@ body {
 
 .logo_name::before {
     background-color: #fdfdfd;
+    /* background-color: #ff1b1b; */
     border: none;
     content: '';
     width: 13rem;
@@ -64,11 +73,13 @@ body {
     position: absolute;
     right: 0;
     z-index: -1;
+
+    animation-delay: 1.0s;
     
     overflow: hidden;
 
     animation: logo_name 1s cubic-bezier(.4, 0, .2, 1) forwards;
-    animation: logo_name_left 1s cubic-bezier(0.3, 0, 1, 0) forwards;
+    animation: logo_name_left 1s cubic-bezier(0.5, 0, 1, 0) forwards;
     
 }
 
@@ -316,12 +327,15 @@ table th, table td {
 }
 
 .design_box_title{
+
     position: absolute;
     top: -18px;
     left: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
     padding: 5px 10px;
+
+    font-size: 16px;
 }
 
 
