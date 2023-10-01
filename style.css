@@ -17,7 +17,8 @@ body {
 }
 
 #container{
-    margin: 8px;
+    /* 上 | 右 | 下 | 左 */
+    margin: 0px 8px 8px 8px;
 }
 
 
