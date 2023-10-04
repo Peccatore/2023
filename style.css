@@ -51,6 +51,34 @@ body {
     
 }
 
+.promotion_logo{
+    position: relative;
+    text-align: right;
+}
+
+.promotion_logo_title{
+    font-size: 20px;
+    font-family: "Allura";
+    display: inline;
+
+
+    vertical-align: bottom;
+    
+    /* margin-right: 0; */
+
+
+}
+
+.promotion_logo_img{
+    display: inline;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.promotion_logo_link{
+    position: relative;
+}
+
 
 
 .logo_line::after {
@@ -160,6 +188,8 @@ body {
 .sun{
     color: #ff1b1b;
 }
+
+
 
 /* styles.css */
 
