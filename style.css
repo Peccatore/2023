@@ -57,21 +57,19 @@ body {
 }
 
 .promotion_logo_title{
-    font-size: 20px;
-    font-family: "Allura";
+    font-size: 12px;
+    font-family: "Sawarabi Mincho";
+
     display: inline;
-
-
-    vertical-align: bottom;
     
-    /* margin-right: 0; */
+    margin-bottom: 5px;
 
 
 }
 
 .promotion_logo_img{
     display: inline;
-    height: 25px;
+    height: 40px;
     vertical-align: middle;
 }
 
@@ -79,6 +77,20 @@ body {
     position: relative;
 }
 
+.promotion_logo_link_thx{
+    position: relative ;
+}
+
+.promotion_logo_img_thx{
+    vertical-align: middle;
+
+    top: 0;
+    bottom: 0;
+
+    display: inline;
+    height: 20px;
+    
+}
 
 
 .logo_line::after {
