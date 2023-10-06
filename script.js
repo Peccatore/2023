@@ -1,7 +1,7 @@
 // script.js
 
-const date1 = "2023/09/11";
-const date2 = "2023/09/10";
+const date1 = "2023/10/06";
+const date2 = "2023/10/07";
 
 // CSVデータをFetchを使用して読み込む処理
 function fetchCSVData() {
@@ -58,7 +58,7 @@ function updateRowColors() {
     table1Rows.forEach((row, index) => {
         if (currentDate > date1) {
             // currentDateがdate1よりも未来の場合、すべての行をグレーに設定
-            row.style.backgroundColor = 'rgb(176, 194, 193)'; // グレー
+            row.style.backgroundColor = '#b0b0b0'; // グレー
         } else if (currentDate === date1) {
             // currentDateがdate1と一致する場合、通常の色設定を実行
             const now = new Date().getTime();
@@ -68,13 +68,13 @@ function updateRowColors() {
             if (rowTime <= now && (!nextRow || convertTimeToMilliseconds(nextRow.querySelector('td:first-child').textContent) > now)) {
                 row.style.backgroundColor = '#99ffda';
             } else if (nextRow && convertTimeToMilliseconds(nextRow.querySelector('td:first-child').textContent) <= now) {
-                row.style.backgroundColor = 'rgb(176, 194, 193)'; // 次の行の時刻を過ぎている場合はグレー
+                row.style.backgroundColor = '#b0b0b0'; // 次の行の時刻を過ぎている場合はグレー
             } else {
                 // その他の場合は背景色を交互に変更
                 if (index % 2 === 0) {
                     row.style.backgroundColor = 'white';
                 } else {
-                    row.style.backgroundColor = '#dcf3fa';
+                    row.style.backgroundColor = '#eeeeee';
                 }
             }
         } else {
@@ -82,7 +82,7 @@ function updateRowColors() {
             if (index % 2 === 0) {
                 row.style.backgroundColor = 'white';
             } else {
-                row.style.backgroundColor = '#dcf3fa';
+                row.style.backgroundColor = '#eeeeee';
             }
         }
     });
@@ -92,7 +92,7 @@ function updateRowColors() {
     table2Rows.forEach((row, index) => {
         if (currentDate > date2) {
             // currentDateがdate2よりも未来の場合、すべての行をグレーに設定
-            row.style.backgroundColor = 'rgb(176, 194, 193)'; // グレー
+            row.style.backgroundColor = '#b0b0b0'; // グレー
         } else if (currentDate === date2) {
             // currentDateがdate2と一致する場合、通常の色設定を実行
             const now = new Date().getTime();
@@ -102,13 +102,13 @@ function updateRowColors() {
             if (rowTime <= now && (!nextRow || convertTimeToMilliseconds(nextRow.querySelector('td:first-child').textContent) > now)) {
                 row.style.backgroundColor = '#99ffda';
             } else if (nextRow && convertTimeToMilliseconds(nextRow.querySelector('td:first-child').textContent) <= now) {
-                row.style.backgroundColor = 'rgb(176, 194, 193)'; // 次の行の時刻を過ぎている場合はグレー
+                row.style.backgroundColor = '#b0b0b0'; // 次の行の時刻を過ぎている場合はグレー
             } else {
                 // その他の場合は背景色を交互に変更
                 if (index % 2 === 0) {
                     row.style.backgroundColor = 'white';
                 } else {
-                    row.style.backgroundColor = '#dcf3fa';
+                    row.style.backgroundColor = '#eeeeee';
                 }
             }
         } else {
@@ -116,7 +116,7 @@ function updateRowColors() {
             if (index % 2 === 0) {
                 row.style.backgroundColor = 'white';
             } else {
-                row.style.backgroundColor = '#dcf3fa';
+                row.style.backgroundColor = '#eeeeee';
             }
         }
     });
