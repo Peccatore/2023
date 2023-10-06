@@ -211,7 +211,7 @@ body {
 
     position: relative;
 
-    display: none;
+    /* display: none; */
 }
 
 
@@ -226,7 +226,7 @@ body {
     display:inline-block; 
     padding:14px 0 12px; 
     color:#fff; 
-    background:#90c9cc; 
+    background:#909090; 
     text-align:center; 
     font-size:13px; 
     cursor:pointer; 
@@ -253,7 +253,7 @@ body {
 .tab_panel{
     width:100%; 
     padding:80px 0; 
-    display:none;
+    /* display:none; */
 }
 
 .tab_panel p{
@@ -267,7 +267,7 @@ body {
     border-bottom-right-radius:10px; 
     border-bottom-left-radius:10px; 
     
-    border-top:8px solid #d7e9ea;
+    border-top:8px solid #eee;
 
 }
 
@@ -302,7 +302,7 @@ input[type="radio"]{
 }
 
 #tab1:checked ~ .tab_area .tab1_label{
-    background:#d7e9ea; 
+    background:#eee; 
     color:#004ffa;
     font-size: 1rem;
     padding:14px 0 16px;
@@ -313,7 +313,7 @@ input[type="radio"]{
 }
 
 #tab2:checked ~ .tab_area .tab2_label{
-    background:#d7e9ea; 
+    background:#eee; 
     color:#ff1b1b;
     font-size: 1rem;
     padding:14px 0 16px;
@@ -335,7 +335,7 @@ table {
 table th, table td {
     padding: 5px;
     text-align: center;
-    border: 2px solid rgb(136, 170, 182);
+    border: 2px solid #ccc;
 
 }
 
@@ -440,7 +440,7 @@ table th, table td {
 
 /* 交互の背景色を設定 */
 table tbody tr:nth-child(even) {
-    background-color: #dcf3fa;
+    background-color: #eeeeee;
 }
 
 table tbody tr:nth-child(odd) {
