@@ -1,7 +1,7 @@
 // script.js
 
-const date1 = "2023/10/06";
-const date2 = "2023/10/07";
+const date1 = "2023/11/11";
+const date2 = "2023/11/12";
 
 // CSVデータをFetchを使用して読み込む処理
 function fetchCSVData() {

@@ -233,6 +233,9 @@ h3{
 
 
 
+.time_table{
+    display: none;
+}
 
 /* styles.css */
 
@@ -242,7 +245,7 @@ h3{
 
     position: relative;
 
-    display: none;
+    /* display: none; */
 }
 
 
@@ -337,6 +340,10 @@ input[type="radio"]{
     color:#004ffa;
     font-size: 1rem;
     padding:14px 0 16px;
+
+    border-top: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
 }
 
 #tab1:checked ~ .panel_area #panel1{
@@ -348,6 +355,10 @@ input[type="radio"]{
     color:#ff1b1b;
     font-size: 1rem;
     padding:14px 0 16px;
+
+    border-top: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
 }
 
 #tab2:checked ~ .panel_area #panel2{
@@ -371,11 +382,11 @@ table th, table td {
 }
 
 .time{
-    width: 4em;
+    width: 2em;
 }
 
 .performer{
-    width: 6em;
+    width: 8em;
 }
 
 /* ヘッダ行の下線 */
