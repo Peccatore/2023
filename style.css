@@ -371,7 +371,9 @@ table {
     border-collapse: collapse;
     margin-top: 0px;
     color: #000;
+
     font-family: "Sawarabi Mincho",'Ubuntu Mono',"ヒラギノ丸ゴ ProN" ,"monospace";
+    font-size: 16px;
 }
 
 table th, table td {
@@ -386,7 +388,7 @@ table th, table td {
 }
 
 .performer{
-    width: 8em;
+    width: 8.5em;
 }
 
 /* ヘッダ行の下線 */
